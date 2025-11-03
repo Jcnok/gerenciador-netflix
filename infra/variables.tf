@@ -16,6 +16,18 @@ variable "storage_account_name" {
   default     = "stnetflixcatalog"
 }
 
+variable "cosmosdb_account_name" {
+  description = "Nome da conta CosmosDB"
+  type        = string
+  default     = "cosmos-netflix-catalog"
+}
+
+variable "cosmosdb_database_name" {
+  description = "Nome do banco de dados CosmosDB"
+  type        = string
+  default     = "NetflixDB"
+}
+
 variable "app_service_plan_name" {
   description = "Nome do App Service Plan"
   type        = string
